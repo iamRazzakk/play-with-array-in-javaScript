@@ -1,11 +1,11 @@
-// Array literal
-// const arr = []
-// arr.push("Rakib")
-// arr[0] = "Rakib"
-// arr[4] = "Razzak"
-// console.log("Array length is", arr?.length, "And Value is", arr)
-// arr.pop()
-// console.log("Array length is", arr?.length, "And Value is", arr)
+Array literal
+const arr = []
+arr.push("Rakib")
+arr[0] = "Rakib"
+arr[4] = "Razzak"
+console.log("Array length is", arr?.length, "And Value is", arr)
+arr.pop()
+console.log("Array length is", arr?.length, "And Value is", arr)
 
 
 
@@ -16,22 +16,22 @@
 // ________________________Constructor__________________________ //
 
 // If your need to use Array in Constructor petarn than you need to use `New` keyWord
-// const myArray = new Array()
-// myArray.push("Rakib")
-// const myArray2 = new Array(5)
-// myArray2[2] = "MD"
-// myArray2[3] = "Abdur"
-// myArray2[4] = "Razzak"
-// console.log(myArray, myArray2)
+const myArray = new Array()
+myArray.push("Rakib")
+const myArray2 = new Array(5)
+myArray2[2] = "MD"
+myArray2[3] = "Abdur"
+myArray2[4] = "Razzak"
+console.log(myArray, myArray2)
 // ________________________Factory__________________________ //
-// const myArray = Array()
-// myArray.push("Rakib")
-// const myArray2 = Array(5)
-// myArray2[2] = "MD"
-// myArray2[3] = "Abdur"
-// myArray2[4] = "Razzak"
-// console.log(myArray, myArray.length, myArray2, myArray2.length)
-// console.log(myArray.__proto__.constructor)
+const myArray = Array()
+myArray.push("Rakib")
+const myArray2 = Array(5)
+myArray2[2] = "MD"
+myArray2[3] = "Abdur"
+myArray2[4] = "Razzak"
+console.log(myArray, myArray.length, myArray2, myArray2.length)
+console.log(myArray.__proto__.constructor)
 
 
 
@@ -42,7 +42,7 @@ const arr = [1, 2, 3, 4, 5]
 const n = arr[3]
 const m = arr[2]
 const x = 1, y = 0
-// console.log(n, m, arr[x], arr[y], arr[x + y + 1])
+console.log(n, m, arr[x], arr[y], arr[x + y + 1])
 
 /**
 Complex is arr[x + y + 1]. There i need index number than i got it.like x = 1, y= 0 total is 1 than + 1 total 2.2 number index is 3. 
@@ -57,8 +57,8 @@ let sum = 0
 for (let i = 0; i < arr.length; i++) {
     sum += arr[i]
 }
-// console.log(sum)
-// console.log(sum / arr.length)
+console.log(sum)
+console.log(sum / arr.length)
 
 
 
@@ -112,9 +112,9 @@ const a = 10,
     b = 20
 for (let i = 0; i < func.length; i++) {
     const result = func[i](a, b)
-    // console.log(`[My result is ${func[i].name} Result is ${result}]`)
+    console.log(`[My result is ${func[i].name} Result is ${result}]`)
 }
-// console.log(func)
+console.log(func)
 
 // Array of Array- Multi dymentional
 
@@ -126,7 +126,18 @@ const pointTable = [
 
 // one dymentional Traverse
 for (let i = 0; i < pointTable.length; i++) {
-    // console.log(`Points ${i} - x = ${pointTable[i][0]} - and  y= ${pointTable[i][1]}`)
+    console.log(`Points ${i} - x = ${pointTable[i][0]} - and  y= ${pointTable[i][1]}`)
 }
 
 // Two dymentional Traverse
+const numbers = [
+    [0, 0, 0, 1],
+    [1, 2, 3, 4],
+    [122, 100, 101, 102]
+]
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers[i].length; j++) {
+
+        console.log(`number = ${numbers[i][j]}`)
+    }
+}

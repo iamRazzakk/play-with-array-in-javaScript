@@ -70,7 +70,7 @@ for (let i = 1; i < arr2.length; i++) {
         largestNumber = arr2[i];
     }
 }
-console.log(largestNumber)
+// console.log(largestNumber)
 
 // Fond Small number 
 let smallestNumber = arr2[0]
@@ -79,4 +79,15 @@ for (let i = 0; i < arr2.length; i++) {
         smallestNumber = arr2[i]
     }
 }
-console.log(smallestNumber)
+// console.log(smallestNumber)
+
+// ________________________Fill Array and Update__________________________ //
+
+const response = new Array(9)
+response.fill(false)
+for (let i = 0; i < response.length; i++) {
+    const rand = Math.floor(Math.random() * 10 + 1)
+    console.log(rand)
+    response[i] = rand > 5 ? "X" : "O"
+}
+console.log(response)

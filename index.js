@@ -83,11 +83,50 @@ for (let i = 0; i < arr2.length; i++) {
 
 // ________________________Fill Array and Update__________________________ //
 
-const response = new Array(9)
-response.fill(false)
-for (let i = 0; i < response.length; i++) {
-    const rand = Math.floor(Math.random() * 10 + 1)
-    console.log(rand)
-    response[i] = rand > 5 ? "X" : "O"
+const myArray3 = new Array(9)
+myArray3.fill(true)
+// console.log(myArray5)
+for (let i = 0; i < myArray3.length; i++) {
+    const randomNumber = Math.floor(Math.random() * 10 + 1)
+    // console.log(randomNumber)
+    myArray3[i] = randomNumber < 5 ? "O" : "X"
 }
-console.log(response)
+// console.log(myArray3)
+// ________________________Array of Object__________________________ //
+const Friends = [
+    { name: "Md Abdur Razzak", email: "rakibt23p@gmail.com", age: 20 },
+    { name: "Md Sazid", email: "sazid@gmail.com", age: 23 },
+    { name: "Md Minhaz", email: "minhaz@gmail.com", age: 20 },
+    { name: "Md Mehraz", email: "mehraz@gmail.com", age: 20 }
+]
+
+// ________________________Array of Function__________________________ //
+// Loop and call array function from array
+const jug = (a, b) => a + b;
+const sub = (a, b) => a - b
+const times = (a, b) => a * b
+const div = (a, b) => a / b
+const mod = (a, b) => a % b
+const func = [jug, sub, times, div, mod]
+const a = 10,
+    b = 20
+for (let i = 0; i < func.length; i++) {
+    const result = func[i](a, b)
+    // console.log(`[My result is ${func[i].name} Result is ${result}]`)
+}
+// console.log(func)
+
+// Array of Array- Multi dymentional
+
+const pointTable = [
+    [0, 0],
+    [1, 2],
+    [122, 100]
+]
+
+// one dymentional Traverse
+for (let i = 0; i < pointTable.length; i++) {
+    // console.log(`Points ${i} - x = ${pointTable[i][0]} - and  y= ${pointTable[i][1]}`)
+}
+
+// Two dymentional Traverse

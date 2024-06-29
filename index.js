@@ -143,28 +143,69 @@ Complex is arr[x + y + 1]. There i need index number than i got it.like x = 1, y
 // }
 // ________________________Add New Element__________________________ //
 // Use push to insert at the end
-const myArray = [1, 3, 4, 5, 6]
-myArray.push(7)
-myArray.push(8)
+// const myArray = [1, 3, 4, 5, 6]
+// myArray.push(7)
+// myArray.push(8)
 // console.log(myArray)
-const myArray2 = [9, 10, 11]
+// const myArray2 = [9, 10, 11]
 // myArray.push(...myArray2)
 // console.log(myArray)
-Array.prototype.push.apply(myArray, myArray2)
+// Array.prototype.push.apply(myArray, myArray2)
 // console.log(myArray)
 
 // Use unshipt to insert at the begening
-const array1 = [7, 8, 9]
-array1.unshift(6)
-const array2 = [3, 4, 5]
-array1.unshift(...array2)
-Array.prototype.unshift.apply(array1, array2)
+// const array1 = [7, 8, 9]
+// array1.unshift(6)
+// const array2 = [3, 4, 5]
+// array1.unshift(...array2)
+// Array.prototype.unshift.apply(array1, array2)
 // console.log(array1)
 
 
 // use Splice to insert at the given index
-const arrS1 = [1, 2, 3, 4, 5, 7, 8]
-arrS1.splice(5, 0, 6)
-const arrS2 = [9, 10]
-arrS1.splice(8, 0, ...arrS2)
-console.log(arrS1)
+// const arrS1 = [1, 2, 3, 4, 5, 7, 8]
+// arrS1.splice(5, 0, 6)
+// const arrS2 = [9, 10]
+// arrS1.splice(8, 0, ...arrS2)
+// console.log(arrS1)
+// ________________________Update an Existence Element__________________________ //
+// easy away
+const myArray = [1, 2, 3, 47, 5]
+myArray[3] = 4
+console.log(myArray)
+// update an array like object
+const person = [
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "email": "john.doe@example.com",
+
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "age": 25,
+        "email": "jane.smith@example.com",
+
+    },
+    {
+        "id": 3,
+        "name": "Michael Johnson",
+        "age": 35,
+        "email": "michael.johnson@example.com",
+    }
+]
+giverId = 2
+name = "MD Abdur Razzak"
+myAge = 23
+id = 1
+for (let i = 0; i < person.length; i++) {
+    if (giverId === person[i].id) {
+        person[i].name = name
+        person[i].age = myAge
+        person[i].id = id
+        break
+    }
+}
+console.log(person)

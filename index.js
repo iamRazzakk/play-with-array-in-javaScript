@@ -151,4 +151,20 @@ const myArray2 = [9, 10, 11]
 // myArray.push(...myArray2)
 // console.log(myArray)
 Array.prototype.push.apply(myArray, myArray2)
-console.log(myArray)
+// console.log(myArray)
+
+// Use unshipt to insert at the begening
+const array1 = [7, 8, 9]
+array1.unshift(6)
+const array2 = [3, 4, 5]
+array1.unshift(...array2)
+Array.prototype.unshift.apply(array1, array2)
+// console.log(array1)
+
+
+// use Splice to insert at the given index
+const arrS1 = [1, 2, 3, 4, 5, 7, 8]
+arrS1.splice(5, 0, 6)
+const arrS2 = [9, 10]
+arrS1.splice(8, 0, ...arrS2)
+console.log(arrS1)

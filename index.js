@@ -213,9 +213,9 @@ Complex is arr[x + y + 1]. There i need index number than i got it.like x = 1, y
 // ________________________Delete specipic Element__________________________ //
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 // remove first element
-// number.pop()
-// number.length = number.length - 1
-// number.splice(3, 4)
+number.pop()
+number.length = number.length - 1
+number.splice(3, 4)
 
 // remove inside element using value;
 const myNumber = 5

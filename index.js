@@ -196,19 +196,19 @@ Complex is arr[x + y + 1]. There i need index number than i got it.like x = 1, y
 //         "email": "michael.johnson@example.com",
 //     }
 // ]
-// giverId = 2
-// name = "MD Abdur Razzak"
-// myAge = 23
-// id = 1
-// for (let i = 0; i < person.length; i++) {
-//     if (giverId === person[i].id) {
-//         person[i].name = name
-//         person[i].age = myAge
-//         person[i].id = id
-//         break
-//     }
-// }
-// console.log(person)
+giverId = 2
+name = "MD Abdur Razzak"
+myAge = 23
+id = 1
+for (let i = 0; i < person.length; i++) {
+    if (giverId === person[i].id) {
+        person[i].name = name
+        person[i].age = myAge
+        person[i].id = id
+        break
+    }
+}
+console.log(person)
 
 // ________________________Delete specipic Element__________________________ //
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
